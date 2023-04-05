@@ -1,0 +1,326 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* --- */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06 );
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#Navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+    font-family: 'Raleway', sans-serif;
+}
+#Navbar li a:hover{
+    color: rgb(255, 21, 13);
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+/*  */
+#hero{
+    background-image: url(/Imagenes/Fondos/nude.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right;
+    color: whitesmoke;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#product1{
+    font-size: 10px;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 2px;
+}
+.pro img:nth-child(2){
+    display: none;
+}
+.pro:hover img:nth-child(1){
+    display: none;
+}
+.pro:hover img:nth-child(2){
+    display: block;
+}
+.bolita {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-right: 5px;
+  }
+.bolita2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(4, 126, 0);
+    display: inline-block;
+    margin-right: 5px;
+}
+.bolita3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 81, 255);
+    display: inline-block;
+    margin-right: 5px;
+}
+.des p{
+    font-size: 15px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: 	#E3DAC9;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A2421;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: grey;
+}
+#newsletter p span{
+    color: 		#543D37;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+footer{
+ display: flex;
+ white-space: nowrap;
+ justify-content: space-between;
+ text-decoration: none;
+ border: 1px solid black;
+}
+footer p{
+color: grey; 
+font-size: 13px;
+margin: 0 0 8px 0;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px ;
+    color: gray;
+}
+footer .logo{
+    margin-bottom: 30px;
+
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px
+}
+footer .follow i:hover,footer a:hover {
+    color: red;
+}
+
+@media (max-width:799px) {
+    #Navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: black;
+        box-shadow: 0 40px 60px red;
+        padding: 80px 0;
+    }
+    #Navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+
+    }
+    #mobile i{
+        color: blue;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+}
+/*  */
+#Contacto{
+    background-color: #E3DAC9;
+    margin: 0;
+}
+#C-F{
+    width: 450px;
+    margin: auto;
+    background: rgb(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+#Contactanos{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.content-F{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+#textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#Bn-Form{
+    padding: 20px;
+}
+#Bn-Form:hover{
+    color: whitesmoke;
+    background-color: black;
+    cursor: pointer;
+}
+@media (max-width:480px){
+    .form{
+        width: 100%;
+    }
+}
+.d-flex button{
+    border: 1px solid black !important;
+    color: black;
+}
+.d-flex button:hover{
+    background-color: black;
+    color: white;
+}
+/*  */
+.card {
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-overlay {
+    position: relative;
+  }
+  
+  .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: -1;
+  }
+  
+  .hover-overlay:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .hover-overlay:hover ~ .card-body {
+    opacity: 0;
+  }
+  
