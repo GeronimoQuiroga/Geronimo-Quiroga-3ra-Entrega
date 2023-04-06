@@ -58,6 +58,11 @@ button.normal{
     display: none;
     align-items: center;
 }
+.Pages{
+    background-color: #E3DAC9;
+    margin: 0;
+}
+
 /*  */
 #hero{
     background-image: url(/Imagenes/Fondos/nude.jpg);
@@ -130,6 +135,7 @@ button.normal{
 .des p{
     font-size: 15px;
 }
+/*  */
 #newsletter{
     display: flex;
     justify-content: space-between;
@@ -181,6 +187,8 @@ footer{
  justify-content: space-between;
  text-decoration: none;
  border: 1px solid black;
+ background-color: white;
+ margin-top: 80px;
 }
 footer p{
 color: grey; 
@@ -210,7 +218,7 @@ footer h4{
 footer .follow i:hover,footer a:hover {
     color: red;
 }
-
+/*  */
 @media (max-width:799px) {
     #Navbar{
         display: flex;
@@ -243,10 +251,6 @@ footer .follow i:hover,footer a:hover {
     
 }
 /*  */
-#Contacto{
-    background-color: #E3DAC9;
-    margin: 0;
-}
 #C-F{
     width: 450px;
     margin: auto;
@@ -322,4 +326,56 @@ footer .follow i:hover,footer a:hover {
 }
 #c-r{
     color: red;
+}
+/*  */
+.n-collection{
+    text-align: center;
+}
+.b-c{
+    align-items: center;
+}
+.img-c{
+    width: 100px;
+    margin: auto;
+    box-sizing: border-box;
+}
+#about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.d-c{
+    text-align: center;
+}
+.des button{
+    align-items: center;
+}
+#T-Col{
+    text-align: center;
+    color: #79443B	;
+}
+
+#product1{
+    font-size: 10px;
+}
+#product1 .pro1-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro1{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro1 img{
+    width: 100%;
+    border-radius: 2px;
+}
+.pro1{
+    color: #3D0C02;
 }
