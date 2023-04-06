@@ -296,31 +296,30 @@ footer .follow i:hover,footer a:hover {
     background-color: black;
     color: white;
 }
-/*  */
-.card {
-    transition: transform 0.2s ease-in-out;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hover-overlay {
-    position: relative;
-  }
-  
-  .hover-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-    z-index: -1;
-  }
-  
-  .hover-overlay:hover .hover-img {
-    opacity: 1;
-  }
-  
-  .hover-overlay:hover ~ .card-body {
-    opacity: 0;
-  }
-  
+/*  */  
+.Information{
+    width: 450px;
+    margin: auto;
+    background: rgb(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+.Titulo-I{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.info{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#c-r{
+    color: red;
+}
